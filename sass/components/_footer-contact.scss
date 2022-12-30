@@ -1,0 +1,56 @@
+.contakts__information:last-child {
+  margin-bottom: 0;
+}
+.contakts__information {
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.contakts__addres {
+  line-height: 1.2;
+  text-decoration: none;
+  color: #ffffff;
+}
+.contakts__mail {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: $title-color;
+
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: $secondary-text;
+  &:hover,
+  &:focus {
+    color: $button-link;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contakts__tel {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: $title-color;
+
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: $secondary-text;
+  &:hover,
+  &:focus {
+    color: $button-link;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

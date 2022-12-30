@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) and(max-width:1199px) {
+  .indent {
+    margin-bottom: 30px;
+  }
+  .card-set {
+    margin: 0 -15px;
+  }
+  .card {
+    display: block;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  .card:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+  .card:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .card__ittem {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}

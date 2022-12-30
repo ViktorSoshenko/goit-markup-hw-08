@@ -1,0 +1,28 @@
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  .menu-button {
+    display: none;
+  }
+  .soc-links {
+    position: absolute;
+    top: -100%;
+  }
+  .header__container {
+    padding: 32px 15px;
+  }
+  .navigation__list .navigation__link {
+    padding-bottom: 39px;
+  }
+  .navigation__item:not(:first-child) {
+    margin-left: 50px;
+  }
+  .contakt__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Портфоліо</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Шапка-->
+    <header class="header">
+      <div class="header__container header__container-internal">
+        <nav class="navigation">
+          <a href="./index.html" class="logo"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40px" height="40px" aria-label="вмикач мобільного меню">
+              <use
+                class="icon-cros"
+                href="./images/icons.svg#icon-cros_40"
+              ></use>
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="./index.html" class="navigation__link">Студія</a>
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation__link current"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Контакти</a>
+              </li>
+            </ul>
+            <!--MENU-->
+            <button type="button" class="menu-button is-open">
+              <svg
+                width="40px"
+                height="40px"
+                aria-label="вмикач мобільного меню"
+              >
+                <use
+                  class="icon-close"
+                  href="./images/icons.svg#icon-close_40"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="./images/icons.svg#icon-menu"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="contakt retreat">
+              <li class="contakt__item">
+                <a href="meilto:info@devstudio.com" class="link mail"
+                  ><svg class="contakt__email-icon" width="16" height="12">
+                    <use href="./images/icons.svg#letter"></use>
+                  </svg>
+
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contakt__item">
+                <a href="tel+380961111111" class="link tel"
+                  ><svg class="contakt__smartfon-icon" width="10" height="16">
+                    <use href="./images/icons.svg#ifone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="soc-links">
+              <li class="soc-links__links">
+                <a href="" class="soc-links__product">Instagram </a>
+              </li>
+
+              <li class="soc-links__links">
+                <a href="" class="soc-links__product">Twitter </a>
+              </li>
+
+              <li class="soc-links__links">
+                <a href="" class="soc-links__product">Facebook</a>
+              </li>
+
+              <li class="soc-links__links">
+                <a href="" class="soc-links__product">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container container-internal">
+          <h1 class="visually-hidden">Фільтр</h1>
+          <ul class="set indent">
+            <li class="set__filter">
+              <button type="button" class="set__button-portfolio">Усі</button>
+            </li>
+            <li class="set__filter">
+              <button type="button" class="set__button-portfolio">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="set__filter">
+              <button type="button" class="set__button-portfolio">
+                Додатки
+              </button>
+            </li>
+            <li class="set__filter">
+              <button type="button" class="set__button-portfolio">
+                Дизайн
+              </button>
+            </li>
+            <li class="set__filter">
+              <button type="button" class="set__button-portfolio">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="card-set">
+            <li class="card">
+              <a href="#" class="card__ittem">
+                <div class="effect">
+                  <img
+                    width="370"
+                    height="294"
+                    srcset="
+                      ./images/porfol1.jpg     450w,
+                      ./images/porfol1@2x.jpg  900w,
+                      ./images/porfol1@3x.jpg 1350w
+                    "
+                    src="./images/porfol1.jpg"
+                    alt=""
+                    sizes="(min-width:1200px) 33w , (min-width:768px) 50w ,100w"
+                  />
+                  <div class="information">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__blok">
+                  <h2 class="portfolio-title">Технокряк</h2>
+                  <p class="categories">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+
+            <li class="card">
+              <a href="#" class="card__ittem"
+                ><div class="effect">
+                  <img
+                    width="370"
+                    height="294"
+                    srcset="
+                      ./images/porfol2.jpg     450w,
+                      ./images/porfol2@2x.jpg  900w,
+                      ./images/porfol2@3x.jpg 1350w
+                    "
+                    src="./images/porfol2.jpg"
+                    alt=""
+                    sizes="(min-width:1200px) 33w , (min-width:768px) 50w ,100w"
+                  />
+                  <div class="information">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__blok">
+                  <h2 class="portfolio-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="categories">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="card">
+              <a href="#" class="card__ittem"
+                ><div class="effect">
+                  <img
+                    width="370"
+                    height="294"
+                    srcset="
+                      ./images/porfol3.jpg     450w,
+                      ./images/porfol3@2x.jpg  900w,
+                      ./images/porfol3@3x.jpg 1350w
+                    "
+                    src="./images/porfol3.jpg"
+                    alt=""
+                    sizes="(min-width:1200px) 33w , (min-width:768px) 50w ,100w"
+                  />
+                  <div class="information">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__blok">
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="categories">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="card">
+              <a href="#" class="card__ittem"
+                ><div class="effect">
+                  <img
+                    width="370"
+                    height="294"
+                    srcset="
+                      ./images/porfol4.jpg     450w,
+                      ./images/porfol4@2x.jpg  900w,
+                      ./images/porfol4@3x.jpg 1350w
+                    "
+                    src="./images/porfol4.jpg"
+                    alt=""
+                    sizes="(min-width:1200px) 33w , (min-width:768px) 50w ,100w"
+                  />
+                  <div class="information">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__blok">
+                  <h2 class="portfolio-title">Проєкт Prime</h2>
+                  <p class="categories">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="card">
+              <a href="#" class="card__ittem"
+                ><div class="effect">
+                  <img
+                    width="370"
+                    height="294"
+                    srcset="
+                      ./images/porfol5.jpg     450w,
+                      ./images/porfol5@2x.jpg  900w,
+                      ./images/porfol5@3x.jpg 1350w
+                    "
+                    src="./images/porfol5.jpg"
+                    alt=""
+                    sizes="(min-width:1200px) 33w , (min-width:768px) 50w ,100w"
+                  />
+                  <div class="information">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__blok">
+                  <h2 class="portfolio-title">Проєкт Boxes</h2>
+                  <p class="categories">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="card">
+              <a href="#" class="card__ittem"
+                ><div class="effect">
+                  <img
+                    width="370"
+                    height="294"
+                    srcset="
+                      ./images/porfol6.jpg     450w,
+                      ./images/porfol6@2x.jpg  900w,
+                      ./images/porfol6@3x.jpg 1350w
+                    "
+                    src="./images/porfol6.jpg"
+                    alt=""
+                    sizes="(min-width:1200px) 33w , (min-width:768px) 50w ,100w"
+                  />
+                  <div class="information">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__blok">
+                  <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                  <p class="categories">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="card">
+              <a href="#" class="card__ittem">
+                <div class="effect">
+                  <img
+                    width="370"
+                    height="294"
+                    srcset="
+                      ./images/porfol7.jpg     450w,
+                      ./images/porfol7@2x.jpg  900w,
+                      ./images/porfol7@3x.jpg 1350w
+                    "
+                    src="./images/porfol7.jpg"
+                    alt=""
+                    sizes="(min-width:1200px) 33w , (min-width:768px) 50w ,100w"
+                  />
+                  <div class="information">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__blok">
+                  <h2 class="portfolio-title">Видання Limited Edition</h2>
+                  <p class="categories">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="card">
+              <a href="#" class="card__ittem">
+                <div class="effect">
+                  <img
+                    width="370"
+                    height="294"
+                    srcset="
+                      ./images/porfol8.jpg     450w,
+                      ./images/porfol8@2x.jpg  900w,
+                      ./images/porfol8@3x.jpg 1350w
+                    "
+                    src="./images/porfol8.jpg"
+                    alt=""
+                    sizes="(min-width:1200px) 33w , (min-width:768px) 50w ,100w"
+                  />
+                  <div class="information">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__blok">
+                  <h2 class="portfolio-title">Проєкт LAB</h2>
+                  <p class="categories">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="card">
+              <a href="#" class="card__ittem"
+                ><div class="effect">
+                  <img
+                    width="370"
+                    height="294"
+                    srcset="
+                      ./images/porfol9.jpg     450w,
+                      ./images/porfol9@2x.jpg  900w,
+                      ./images/porfol9@3x.jpg 1350w
+                    "
+                    src="./images/porfol9.jpg"
+                    alt=""
+                    sizes="(min-width:1200px) 33w , (min-width:768px) 50w ,100w"
+                  />
+                  <div class="information">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__blok">
+                  <h2 class="portfolio-title">Growing Business</h2>
+                  <p class="categories">Додаток</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!---footer-->
+    <footer class="footer-title">
+      <div class="container info">
+        <div class="tablet-conteiner">
+          <div class="blok-logo">
+            <a href="" class="logo foot"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <address>
+              <ul class="contacts">
+                <li class="contakts__information">
+                  <a href="м.Київ,пр-тЛесіУкраїнки,26" class="contakts__addres"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="contakts__information">
+                  <a href="meilto:info@devstudio.com" class="contakts__mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contakts__information">
+                  <a href="tel+380961111111" class="contakts__tel"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-network">
+            <p class="invite">приєднуйтесь</p>
+            <ul class="social-links">
+              <li class="social-links__links">
+                <a href="#" class="social-links__product">
+                  <svg class="instagram" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="social-links__links">
+                <a href="#" class="social-links__product">
+                  <svg class="twitter" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__links">
+                <a href="#" class="social-links__product">
+                  <svg class="facebook" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links__links">
+                <a href="#" class="social-links__product">
+                  <svg class="linkedin" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--пшдписатись на розсилку-->
+
+        <div class="subscription">
+          <p class="invite">Підпишіться на розсилку</p>
+          <form class="form-subscription">
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="form-subscription__field"
+            />
+            <button
+              type="submit"
+              class="form-subscription__button"
+              data-modal-open
+            >
+              Підписатися
+              <svg class="icon-send--left" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

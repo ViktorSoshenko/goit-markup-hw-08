@@ -1,0 +1,181 @@
+.footer-title {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  outline: 1px solid tomato;
+  background-color: #2f303a;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+
+  text-decoration: none;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+
+  &__accent {
+    color: $button-link;
+  }
+}
+
+.foot {
+  color: #ffffff;
+}
+
+address {
+  margin-top: 20px;
+}
+
+.contakts__information:last-child {
+  margin-bottom: 0;
+}
+.contakts__information {
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.contakts__addres {
+  line-height: 1.2;
+  text-decoration: none;
+  color: $body-color;
+}
+.contakts__mail {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: $secondary-text;
+  &:hover,
+  &:focus {
+    color: $button-link;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contakts__tel {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: $secondary-text;
+  &:hover,
+  &:focus {
+    color: $button-link;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/*fotter network*/
+.footer-network {
+  display: block;
+  margin-left: 70px;
+}
+
+.invite {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.instagram {
+  fill: currentColor;
+}
+.twitter {
+  fill: currentColor;
+}
+.facebook {
+  fill: currentColor;
+}
+.linkedin {
+  fill: currentColor;
+}
+
+/*розсилка*/
+
+.subscription {
+  margin-left: auto;
+}
+
+.form-subscription {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+
+  &__field {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    margin-right: 12px;
+    padding: 15px 0 15px 16px;
+    cursor: pointer;
+    color: $body-color;
+    outline: none;
+  }
+
+  &__button {
+    display: flex;
+    min-width: 200px;
+    align-items: flex-end;
+    justify-content: center;
+
+    color: #ffffff;
+    background-color: #188ce8;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 32px;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 1.9;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+
+    text-align: center;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .icon-send--left {
+      margin-left: 10px;
+    }
+    .icon-send--right {
+      margin-right: 10px;
+    }
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+    &:active {
+      background-color: #188ce8;
+
+      left: 692px;
+      top: 430px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+    }
+  }
+}

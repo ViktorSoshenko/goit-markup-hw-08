@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px) {
+  .set {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    &__filter:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+  .indent {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card-set {
+    display: block;
+  }
+  .card {
+    width: 100%;
+  }
+  .card:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

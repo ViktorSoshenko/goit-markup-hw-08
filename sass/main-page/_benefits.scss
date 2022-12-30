@@ -1,0 +1,70 @@
+.merit {
+  display: flex;
+  list-style: none;
+}
+
+.merit__element {
+  display: block;
+  &.antena::before {
+    display: block;
+    content: " ";
+    background-color: #f5f4fa;
+    height: 120px;
+    width: 270px;
+    background-image: url("../images/antenna.svg");
+    background-repeat: no-repeat;
+
+    background-position: center;
+  }
+
+  &.clock::before {
+    display: block;
+    content: " ";
+    background-color: #f5f4fa;
+    height: 120px;
+    width: 270px;
+    background-image: url("../images/clock.svg");
+    background-repeat: no-repeat;
+
+    background-position: center;
+  }
+
+  &.diagram::before {
+    display: block;
+    content: " ";
+    background-color: #f5f4fa;
+    height: 120px;
+    width: 270px;
+    background-image: url("../images/diagram.svg");
+    background-repeat: no-repeat;
+
+    background-position: center;
+  }
+
+  &.astronaut::before {
+    display: block;
+    content: " ";
+    background-color: #f5f4fa;
+    height: 120px;
+    width: 270px;
+    background-image: url("../images/astronaut.svg");
+    background-repeat: no-repeat;
+
+    background-position: center;
+  }
+}
+
+.merit__title {
+  color: $title-color;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.merit__paragraf {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $secondary-text;
+}

@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .merit {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    list-style: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .merit__element:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+  .merit__element:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .merit__element {
+    display: block;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+.merit__element.antena::before {
+  height: 120px;
+  width: 100%;
+}
+
+.merit__element.clock::before {
+  height: 120px;
+  width: 100%;
+}
+
+.merit__element.diagram::before {
+  height: 120px;
+  width: 100%;
+}
+
+.merit__element.astronaut::before {
+  height: 120px;
+  width: 100%;
+}

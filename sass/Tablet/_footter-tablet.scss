@@ -1,0 +1,90 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .info {
+    display: block;
+  }
+  .blok-logo {
+    margin-left: 76px;
+  }
+
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  address {
+    margin-top: 28px;
+  }
+
+  .contakts__mail {
+    display: block;
+    text-align: center;
+  }
+
+  .contakts__tel {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-network {
+    margin-left: 0;
+    margin-right: 89px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .social-links {
+    display: flex;
+    justify-content: center;
+    &__links:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &__product {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background-color: $button-link;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .tablet-conteiner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscription {
+    text-align: center;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 450px;
+  }
+
+  .form-subscription {
+    display: block;
+    width: 100%;
+  }
+  .form-subscription__button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .form-subscription__field {
+    margin-right: 0;
+    width: 450px;
+  }
+}

@@ -1,0 +1,148 @@
+.header__container {
+  outline: 1px solid rgb(90, 215, 7);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.header__container-internal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo__accent {
+  color: $button-link;
+}
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  list-style: none;
+  padding-inline-start: 0px;
+  display: flex;
+  margin-left: 93px;
+  flex-wrap: wrap;
+
+  .navigation__link {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    padding: 32px 0;
+
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $button-link;
+    }
+
+    &.current {
+      color: $button-link;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+
+        right: 0;
+        width: 100%;
+        height: 4px;
+        background: $button-link;
+        border-radius: 2px;
+        display: block;
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.contakt {
+  font-weight: 500;
+  list-style: none;
+  line-height: 1.15;
+  padding-inline-start: 0px;
+  display: flex;
+}
+
+/*.retreat {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .retreat {
+    margin-left: 0;
+  }
+}*/
+
+.mail {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
+
+  color: $secondary-text;
+
+  &:hover,
+  &:focus {
+    color: $button-link;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.tel {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
+
+  color: $secondary-text;
+
+  &:hover,
+  &:focus {
+    color: $button-link;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contakt__email-icon,
+.contakt__smartfon-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

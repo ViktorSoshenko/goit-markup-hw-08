@@ -1,0 +1,13 @@
+@media screen and (min-width: 1200px) {
+  .company-list {
+    width: 100%;
+  }
+  .company-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .all-company {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
