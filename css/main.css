@@ -706,6 +706,7 @@ address {
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 
 .button-close {
@@ -1199,6 +1200,7 @@ address {
   }
   .soc-links {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
     list-style: none;
   }
@@ -1278,11 +1280,13 @@ address {
     background-color: #fff;
     text-align: center;
     font-size: 20px;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
   }
   .menu-container.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1889,7 +1893,6 @@ address {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: #fff;
     background: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }

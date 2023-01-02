@@ -113,6 +113,7 @@
 
   .soc-links {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
     list-style: none;
     &__links {
@@ -201,10 +202,12 @@
     background-color: #fff;
     text-align: center;
     font-size: 20px;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 }
