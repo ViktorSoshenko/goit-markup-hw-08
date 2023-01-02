@@ -369,7 +369,7 @@ li {
 
 .foto {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1427,7 +1427,7 @@ address {
   }
   .foto {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
   .personnel {
