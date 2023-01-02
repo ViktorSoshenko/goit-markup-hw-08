@@ -183,6 +183,10 @@
 
     display: block;
   }
+
+  .soc-links__product::before:not(:first-child) {
+    color: rgb(238, 14, 55);
+  }
 }
 @media screen and (max-width: 767px) {
   /*menu-container*/
