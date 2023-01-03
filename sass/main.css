@@ -700,13 +700,13 @@ address {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 93px 15px;
-  overflow-y: auto;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 
 .button-close {
@@ -742,9 +742,9 @@ address {
 
 @media screen and (max-width: 767px) {
   .modal {
-    width: 90%;
-    height: 75%;
-    overflow-y: scroll;
+    width: 450px;
+    height: 609px;
+    overflow-x: scroll;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1210,16 +1210,6 @@ address {
   .soc-links__links:not(:last-child) {
     margin-right: 20px;
   }
-  .soc-links .soc-links__links:not(:first-child)::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    border: 0.5px solid rgba(33, 33, 33, 0.2);
-    left: -10px;
-    width: 0;
-    height: 100%;
-    display: block;
-  }
 }
 @media screen and (max-width: 767px) {
   /*menu-button*/
@@ -1264,18 +1254,17 @@ address {
     color: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  /*.soc-links__product::before {
+  .soc-links__product::before {
     content: "";
     position: absolute;
     bottom: 0;
-    border: 0.5px solid rgba(33, 33, 33, 0.2);
-
+    /*border: 0.5px solid rgba(33, 33, 33, 0.2);*/
+    border: 0.5px solid rgba(6, 243, 117, 0.2);
     left: -10px;
     width: 0;
     height: 100%;
-
     display: block;
-  }*/
+  }
 }
 @media screen and (max-width: 767px) {
   /*menu-container*/
@@ -1296,7 +1285,6 @@ address {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: scroll;
   }
 }
 @media screen and (max-width: 1199px) {
